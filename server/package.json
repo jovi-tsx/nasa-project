@@ -5,8 +5,8 @@
   "main": "src/server.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
+    "test": "jest --setupFiles dotenv/config",
+    "test:watch": "jest --setupFiles dotenv/config --watch",
     "dev": "nodemon",
     "start": "node src/server.js",
     "cluster": "pm2 start src/server.js -i max"
